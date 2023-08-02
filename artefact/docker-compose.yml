@@ -1,0 +1,38 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  p0:
+    image: dm883
+    container_name: p0
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    command: python main.py
+    working_dir: /dm883
+    volumes:
+      - ./:/dm883
+  p1:
+    image: dm883
+    container_name: p1
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    command: python main.py
+    working_dir: /dm883
+    volumes:
+      - ./:/dm883
+  p2:
+    image: dm883
+    container_name: p2
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    command: python main.py
+    working_dir: /dm883
+    volumes:
+      - ./:/dm883
+  p3:
+    image: dm883
+    container_name: p3
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    command: python main.py
+    working_dir: /dm883
+    volumes:
+      - ./:/dm883
